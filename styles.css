@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    margin: 16px;
+    background-color: white;
+    border-radius: 16px;
+}
+
+.image {
+    width: 100%;
+    content: url('./images/image-product-mobile.jpg');
+    border-radius: 8px 8px 0 0;
+}
+
+.main {
+    padding: 16px 0;
+}
+
+h1 {
+    font-size: 16px;
+    font-family: "Montserrat";
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin: 16px;
+    color: hsl(228, 12%, 48%);
+    
+}
+
+h2 {
+    font-size: 38px;
+    font-family: "Fraunces";
+    line-height: 38px;
+    margin: 16px;
+}
+
+p {
+    margin: 16px;
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin: 16px;
+}
+
+.new {
+    font-size: 38px;
+    font-weight: 700;
+    font-family: "Fraunces";
+    color: hsl(158, 36%, 37%);
+    margin-right: 16px;
+}
+
+.old {
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-family: "Montserrat";
+    text-decoration: line-through;
+}
+
+button {
+    display: block;
+    width: calc(100% - 32px);
+    padding: 16px;
+    margin: 16px;
+    background: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Montserrat";
+
+}
+
+button:hover {
+    cursor: pointer;
+    background: hsl(212, 21%, 14%);
+}
+
+@media (min-width: 600px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        width: 600px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .image {
+        content: url('./images/image-product-desktop.jpg');    
+        max-width: 50%;
+        border-radius: 16px 0 0 16px;
+    }
+}
